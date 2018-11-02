@@ -22,12 +22,8 @@ public class BitmexManualExample {
 
         CurrencyPair xbtUsd = CurrencyPair.XBT_USD;
         streamingMarketDataService.getOrderBook(xbtUsd).subscribe(orderBook -> {
-            if (!orderBook.getAsks().isEmpty()) {
-                LOG.info("First ask: {}", orderBook.getAsks().get(0));
-            }
-            if (!orderBook.getBids().isEmpty()) {
-                LOG.info("First bid: {}", orderBook.getBids().get(0));
-            }
+            LOG.info("First ask: {}", orderBook.getAsks().get(0));
+            LOG.info("First bid: {}", orderBook.getBids().get(0));
         }, throwable -> LOG.error("ERROR in getting order book: ", throwable));
 
         streamingMarketDataService.getRawTicker(xbtUsd).subscribe(ticker -> {
@@ -43,11 +39,9 @@ public class BitmexManualExample {
                         throwable -> LOG.error("ERROR in getting trades: ", throwable));
 
         try {
-            Thread.sleep(10000);
+            Thread.sleep(100000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-
-        exchange.disconnect().blockingAwait();
     }
 }
