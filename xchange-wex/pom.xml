@@ -3,11 +3,15 @@
     <parent>
         <artifactId>xchange-stream-parent</artifactId>
         <groupId>info.bitrich.xchange-stream</groupId>
-        <version>4.3.12-SNAPSHOT</version>
+        <version>4.3.11.orko.2-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>xchange-wex</artifactId>
+    
+    <properties>
+	    <github.site.path>${project.version}/${project.artifactId}</github.site.path>
+	</properties>
 
     <dependencies>
         <dependency>
