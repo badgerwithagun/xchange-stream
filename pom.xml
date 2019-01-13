@@ -2,7 +2,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>info.bitrich.xchange-stream</groupId>
+    <groupId>com.github.badgerwithagun.xchange-stream</groupId>
     <artifactId>xchange-stream-parent</artifactId>
     <packaging>pom</packaging>
     <version>4.3.14.orko.2-SNAPSHOT</version>
@@ -60,7 +60,7 @@
     </scm>
 
     <properties>
-        <xchange.version>4.3.14</xchange.version>
+        <xchange.version>4.3.14.orko.2</xchange.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <maven.compiler.source>1.8</maven.compiler.source>
